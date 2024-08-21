@@ -1,0 +1,103 @@
+.login-button {
+  display: flex;
+  justify-content: flex-end;
+  margin: 20px;
+}
+
+.login-button .user-icon {
+  margin-right: 10px;
+}
+
+.nav-section {
+  display: flex;
+  justify-content: center;
+}
+
+.menu-area {
+  display: flex;
+  justify-content: center;
+}
+.menu-list {
+  display: flex;
+  list-style-type: none;
+}
+.menu-list li {
+  padding: 10px;
+}
+
+.search-area {
+  position: absolute;
+  right: 0;
+}
+.search-area .inner {
+  position: relative;
+  width: 200px;
+  padding: 0 20px;
+}
+
+.search-area .search-icon {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+  margin-right: 8px;
+}
+
+.search-area input {
+  font-size: 15px;
+  color: #222222;
+  width: 100%;
+  border: none;
+  border-bottom: solid #aaaaaa 1px;
+  padding-bottom: 10px;
+  padding-left: 10px;
+  position: relative;
+  background: none;
+  z-index: 5;
+}
+
+.search-area input::placeholder {
+  color: #aaaaaa;
+}
+.search-area input:focus {
+  outline: none;
+}
+
+.search-area span {
+  display: block;
+  position: absolute;
+  bottom: 0;
+  left: 0%;
+  background-color: #666;
+  width: 0;
+  height: 2px;
+  border-radius: 2px;
+  transition: 0.5s;
+}
+
+.search-area label {
+  position: absolute;
+  color: #aaa;
+  left: 30px;
+  font-size: 20px;
+  bottom: 0;
+  transition: all 0.2s;
+}
+
+.search-area input:focus ~ label,
+.search-area input:valid ~ label {
+  font-size: 16px;
+  bottom: 30px;
+  left: 0;
+  color: #666;
+  font-weight: bold;
+}
+
+.search-area input:focus ~ span,
+.search-area input:valid ~ span {
+  width: 100%;
+}
+
+.card {
+  margin-bottom: 10px;
+}
